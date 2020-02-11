@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import Home from "../pages/home/Home";
 
 const RouteWithSubRoutes = route => (
   <Route
@@ -28,7 +29,7 @@ export const routes = [
   {
     path: "/",
     key: "home",
-    component: () => <h1>Home placeholder</h1>,
+    component: Home,
     exact: true
   },
   {
